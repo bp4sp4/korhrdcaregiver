@@ -1,26 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useEffect } from "react";
 
 declare global {
   interface Window {
-    kakao: {
-      maps: {
-        load: (callback: () => void) => void;
-        LatLng: new (lat: number, lng: number) => any;
-        StaticMap: new (
-          container: HTMLElement | null,
-          options: {
-            center: any;
-            level: number;
-            marker: {
-              position: any;
-              text: string;
-            };
-          }
-        ) => void;
-      };
-    };
+    kakao: any;
   }
 }
 
