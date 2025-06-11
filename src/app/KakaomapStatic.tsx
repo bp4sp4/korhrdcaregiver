@@ -2,10 +2,25 @@
 
 import { useEffect } from "react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare global {
   interface Window {
-    kakao: any;
+    kakao: {
+      maps: {
+        load: (callback: () => void) => void;
+        LatLng: new (lat: number, lng: number) => any;
+        StaticMap: new (
+          container: HTMLElement | null,
+          options: {
+            center: any;
+            level: number;
+            marker: {
+              position: any;
+              text: string;
+            };
+          }
+        ) => void;
+      };
+    };
   }
 }
 
