@@ -41,7 +41,6 @@ export default function KakaoStaticMap() {
         level: 3,
         marker,
       };
-      // eslint-disable-next-line no-new
       new window.kakao.maps.StaticMap(staticMapContainer, staticMapOption);
     }
   }, []);
