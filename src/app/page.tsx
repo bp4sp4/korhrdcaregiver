@@ -249,9 +249,11 @@ export default function Home() {
         <div className="flex flex-row items-center gap-8 justify-center">
           {/* Timeline Image */}
           <div className="flex flex-col items-center pt-2 min-w-[60px]">
-            <img
+            <Image
               src="/lake.png"
               alt="timeline"
+              width={16}
+              height={120}
               className="w-4 h-full object-contain"
             />
           </div>
