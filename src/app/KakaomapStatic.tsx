@@ -1,13 +1,13 @@
 "use client";
 
+import { useEffect } from "react";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare global {
   interface Window {
     kakao: any;
   }
 }
-
-import { useEffect } from "react";
 
 export default function KakaoStaticMap() {
   useEffect(() => {
