@@ -329,7 +329,7 @@ export default function Home() {
             <summary className="flex justify-between items-center text-[17px] font-medium text-[#191c1d] list-none">
               자격증 취득 후 요양보호사 일을 하려면 어떻게 해야 하나요?
               <span className="transition-transform group-open:rotate-180">
-                &#x25B2;
+                &#x25BC;
               </span>
             </summary>
             <div className="mt-4 text-gray-500 text-[18px]">
@@ -401,27 +401,27 @@ export default function Home() {
         <h2 className="text-[37px] font-bold text-center mb-6 text-[#191c1d]">
           평생교육원 사진
         </h2>
-        <div className="flex gap-4 justify-center overflow-x-auto pb-2">
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-4 justify-center pb-2">
           <Image
             src="/img1.jpg"
             alt="교육원 사진1"
-            width={180}
-            height={120}
-            className="rounded-lg object-cover"
+            width={400}
+            height={270}
+            className="rounded-lg object-cover w-full h-[180px]"
           />
           <Image
             src="/img1.jpg"
             alt="교육원 사진2"
-            width={180}
-            height={120}
-            className="rounded-lg object-cover"
+            width={400}
+            height={270}
+            className="rounded-lg object-cover w-full h-[180px]"
           />
           <Image
             src="/img1.jpg"
             alt="교육원 사진3"
-            width={180}
-            height={120}
-            className="rounded-lg object-cover"
+            width={400}
+            height={270}
+            className="rounded-lg object-cover w-full h-[180px]"
           />
         </div>
       </section>
